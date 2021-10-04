@@ -1,0 +1,10 @@
+.navigation{
+    background-color: rgba(0, 0, 0, 0.883);
+    line-height: 50px;
+    font-size: 30px;
+    padding: 10px;
+}
+
+nav NavLink{
+    margin-right: 20px;
+}
