@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Row, Spinner } from 'react-bootstrap';
 import Courses from '../Courses/Courses';
+import './Home.css';
 
 const Home = () => {
     const [courses, setCourses] = useState([]);
@@ -12,7 +13,14 @@ const Home = () => {
             .then(data => setCourses(data));
     }, []);
     return (
-        <div>
+
+      <div>
+
+          <div>
+          <h3 className="main-style">Our main goal is to:  <q>Build a future where people face no difficulty in speaking different languages.</q></h3>
+          </div>
+         
+            <div>
            {
         courses.length === 0 ?
           <Spinner animation="border" />
@@ -26,6 +34,7 @@ const Home = () => {
           </Row>
       }
         </div>
+      </div>
     );
 };
 
