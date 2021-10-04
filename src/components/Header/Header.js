@@ -1,5 +1,4 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
@@ -16,10 +15,10 @@ const Header = () => {
     }
     return (
         <nav className="navigation">
-            <NavLink activeStyle={activeStyle} to="/home ">Home</NavLink>
-            <NavLink activeStyle={activeStyle} to="/about ">About-us</NavLink>
-            <NavLink activeStyle={activeStyle} to="/services ">Services</NavLink>
-            <NavLink activeStyle={activeStyle} to="/tutor ">Become a tutor</NavLink>
+            <NavLink activeStyle={activeStyle} to="/home">Home</NavLink>
+            <NavLink activeStyle={activeStyle} to="/about">About-us</NavLink>
+            <NavLink activeStyle={activeStyle} to="/services">Services</NavLink>
+            <NavLink activeStyle={activeStyle} to="/tutor">Become a tutor</NavLink>
 
         </nav>
  
