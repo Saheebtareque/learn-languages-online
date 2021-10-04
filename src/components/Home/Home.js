@@ -8,7 +8,7 @@ import './Home.css';
 const Home = () => {
     const [courses, setCourses] = useState([]);
     useEffect(() => {
-        fetch('./courses.JSON')
+        fetch('./premiumcourses.JSON')
             .then(res => res.json())
             .then(data => setCourses(data));
     }, []);
